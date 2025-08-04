@@ -23,3 +23,17 @@ body {
     font-size: 1.6rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
+
+td span{
+    display: block;
+}

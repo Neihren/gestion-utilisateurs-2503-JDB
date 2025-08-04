@@ -11,11 +11,114 @@
 
 <body>
     <header>
-
+        <img src="./img/logo/CRM_logo-vertical.png" alt="">
     </header>
 
     <main>
-
+        <form id="formCreateRole">
+            <fieldset>
+                <legend>Création du rôle</legend>
+                <label for="roleName">Nom du rôle</label>
+                <input type="text" name="roleName" id="roleName" title="Saisir le nom du rôle" required>
+                <label for="roleDesc">Description du rôle</label>
+                <textarea name="roleDesc" id="roleDesc" title="Décrire l'utilité du rôle" required></textarea>
+            </fieldset>
+            <button type="submit" form="formCreateRole">Créer un rôle</button>
+            <button type="reset" form="formCreateRole">Vider</button>
+        </form>
+        
+        <form id="formChangeRole">
+            <fieldset>
+                <legend>Gestion d'un rôle</legend>
+                <select name="roleToManage" id="roleToManage" required>
+                    <option value="">-- Selectionner un rôle --</option>
+                    <option value="Usager">Usager</option>
+                    <option value="Encadrant">Encadrant</option>
+                    <option value="Administrateur">Administrateur</option>
+                </select>
+                <label for="changeRoleName">Nouveau nom du rôle</label>
+                <input type="text" name="changeRoleName" id="changeRoleName">
+                <label for="changeRoleDesc">Nouvelle description du rôle</label>
+                <textarea name="changeRoleDesc" id="changeRoleDesc"></textarea>
+                <fieldset>
+                    <legend>Vues utilisateurs</legend>
+                    <div id="viewUsager">
+                        <label>Usager</label>
+                        <input type="checkbox" name="viewUsagerSurname" id="viewUsagerSurname" value="viewUsagerSurname">
+                        <input type="checkbox" name="viewUsagerFirstname" id="viewUsagerFirstname"
+                            value="viewUsagerFirstname">
+                        <input type="checkbox" name="viewUsagerEmail" id="viewUsagerEmail" value="viewUsagerEmail">
+                        <input type="checkbox" name="viewUsagerRole" id="viewUsagerRole" value="viewUsagerRole">
+                    </div>
+                    <div id="viewEncadrant">
+                        <label>Encadrant</label>
+                        <input type="checkbox" name="viewEncadrantSurname" id="viewEncadrantSurname"
+                            value="viewEncadrantSurname">
+                        <input type="checkbox" name="viewEncadrantFirstname" id="viewEncadrantFirstname"
+                            value="viewEncadrantFirstname">
+                        <input type="checkbox" name="viewEncadrantEmail" id="viewEncadrantEmail" value="viewEncadrantEmail">
+                        <input type="checkbox" name="viewEncadrantRole" id="viewEncadrantRole" value="viewEncadrantRole">
+                    </div>
+                    <div id="viewAdministrateur">
+                        <label>Administrateur</label>
+                        <input type="checkbox" name="viewAdministrateurSurname" id="viewAdministrateurSurname"
+                            value="viewAdministrateurSurname">
+                        <input type="checkbox" name="viewAdministrateurFirstname" id="viewAdministrateurFirstname"
+                            value="viewAdministrateurFirstname">
+                        <input type="checkbox" name="viewAdministrateurEmail" id="viewAdministrateurEmail"
+                            value="viewAdministrateurEmail">
+                        <input type="checkbox" name="viewAdministrateurRole" id="viewAdministrateurRole"
+                            value="viewAdministrateurRole">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Gestion des utilisateurs</legend>
+                    <div id="changeUsager">
+                        <label>Usager</label>
+                        <input type="checkbox" name="changeUsagerSurname" id="changeUsagerSurname"
+                            value="changeUsagerSurname">
+                        <input type="checkbox" name="changeUsagerFirstname" id="changeUsagerFirstname"
+                            value="changeUsagerFirstname">
+                        <input type="checkbox" name="changeUsagerEmail" id="changeUsagerEmail" value="changeUsagerEmail">
+                        <input type="checkbox" name="changeUsagerRole" id="changeUsagerRole" value="changeUsagerRole">
+                        <input type="checkbox" name="changeUsagerPassword" id="changeUsagerPassword"
+                            value="changeUsagerPassword">
+                        <input type="checkbox" name="deleteUsager" id="deleteUsager" value="deleteUsager">
+                    </div>
+                    <div id="changeEncadrant">
+                        <label>Encadrant</label>
+                        <input type="checkbox" name="changeEncadrantSurname" id="changeEncadrantSurname"
+                            value="changeEncadrantSurname">
+                        <input type="checkbox" name="changeEncadrantFirstname" id="changeEncadrantFirstname"
+                            value="changeEncadrantFirstname">
+                        <input type="checkbox" name="changeEncadrantEmail" id="changeEncadrantEmail"
+                            value="changeEncadrantEmail">
+                        <input type="checkbox" name="changeEncadrantRole" id="changeEncadrantRole"
+                            value="changeEncadrantRole">
+                        <input type="checkbox" name="changeEncadrantPassword" id="changeEncadrantPassword"
+                            value="changeEncadrantPassword">
+                        <input type="checkbox" name="deleteEncadrant" id="deleteEncadrant" value="deleteEncadrant">
+                    </div>
+                    <div id="changeAdministrateur">
+                        <label>Administrateur</label>
+                        <input type="checkbox" name="changeAdministrateurSurname" id="changeAdministrateurSurname"
+                            value="changeAdministrateurSurname">
+                        <input type="checkbox" name="changeAdministrateurFirstname" id="changeAdministrateurFirstname"
+                            value="changeAdministrateurFirstname">
+                        <input type="checkbox" name="changeAdministrateurEmail" id="changeAdministrateurEmail"
+                            value="changeAdministrateurEmail">
+                        <input type="checkbox" name="changeAdministrateurRole" id="changeAdministrateurRole"
+                            value="changeAdministrateurRole">
+                        <input type="checkbox" name="changeAdministrateurPassword" id="changeAdministrateurPassword"
+                            value="changeAdministrateurPassword">
+                        <input type="checkbox" name="deleteAdministrateur" id="deleteAdministrateur"
+                            value="deleteAdministrateurs">
+                    </div>
+                </fieldset>
+            </fieldset>
+            <button type="submit" form="formChangeRole">Changer le rôle</button>
+            <button type="reset" form="formChangeRole">Vider</button>
+        </form>
     </main>
 
     <footer>

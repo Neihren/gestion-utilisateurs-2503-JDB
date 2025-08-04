@@ -16,6 +16,77 @@
 
     <main>
 
+        <!-- https://www.w3.org/WAI/tutorials/tables/irregular/ -->
+        <table>
+            <caption>
+                Roles et droits
+            </caption>
+            <colgroup span="1"></colgroup>
+            <colgroup span="7"></colgroup>
+            <tr>
+                <th rowspan="2">Rôles</td>
+                <th colspan="7" scope="colgroup">Descriptions</th>
+            </tr>
+            <tr>
+                <th scope="col">Création de compte</th>
+                <th scope="col">Identification</th>
+                <th scope="col">Réinitialisation MDP</th>
+                <th scope="col">Consultation Profils</th>
+                <th scope="col">Modification Profils</th>
+                <th scope="col">Parcourir liste utilisateurs</th>
+                <th scope="col">Supprimer utilisateurs</th>
+            </tr>
+            <tr>
+                <th scope="row">Invité</th>
+                <td>Perso avec code inscription</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th scope="row">Usager</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Perso - Total</td>
+                <td>Perso - Hors Rôle</td>
+                <td>Oui</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th scope="row">Encadrant</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>
+                    <span>Tous hors Admin - Total</span>
+                </td>
+                <td>
+                    <span>Perso - Hors Rôle</span>
+                    <span>Usagers - Hors Rôle & MDP</span>
+                    <span>Encadrant - Hors Rôle & MDP</span>
+                </td>
+                <td>Oui</td>
+                <td> - </td>
+            </tr>
+            <tr>
+                <th scope="row">Administrateur</th>
+                <td>Autre sans code</td>
+                <td>-</td>
+                <td>-</td>
+                <td>
+                    <span>Perso - Total</span>
+                    <span>Tous - Total</span>
+                </td>
+                <td>Tous - Total</td>
+                <td>Oui</td>
+                <td>Oui</td>
+            </tr>
+        </table>
+
     </main>
 
     <footer>
