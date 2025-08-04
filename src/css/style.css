@@ -1,0 +1,25 @@
+:root {
+    --light: white;
+    --dark: black;
+    /* Obligatoire */
+    --crm-primary: #1b296a;
+    /* Obligatoire */
+    --crm-secondary: #ed6840;
+    --crm-ofp: #7db9da;
+    --crm-alert: #cf2d4f;
+    --crm-warning: #f6af2e;
+    --crm-success: #488287;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
