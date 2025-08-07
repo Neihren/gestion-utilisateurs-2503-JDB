@@ -6,16 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <title>Gestion Utilisateur - Utilisateur Ajouter</title>
+    <title>Gestion Utilisateur - Ajouter Utilisateur</title>
 </head>
 
 <body>
     <header>
-
+        <img src="./img/logo/CRM_logo-vertical.png" alt="">
+        <h1>Ajout d'un utilisateur</h1>
     </header>
 
     <main>
-        
+        <form id="formAddUser">
+            <fieldset>
+                <legend>Informations Personnelles</legend>
+                <label for="surname">Nom</label>
+                <input type="text" name="surname" id="surname">
+                <label for="firstname">Prenom</label>
+                <input type="text" name="firstname" id="firstname">
+            </fieldset>
+            <fieldset>
+                <legend>Administration</legend>
+                <label for="id">Matricule</label>
+                <input type="number" name="id" id="id">
+                <label for="email">Adresse email</label>
+                <input type="email" name="email" id="email">
+                <label for="role">Role</label>
+                <select name="role" id="role">
+                    <option value="">-- Sélectionner un rôle</option>
+                    <option value="usager">Usager</option>
+                    <option value="encadrant">Encadrant</option>
+                    <option value="administrateur">Administrateur</option>
+                </select>
+            </fieldset>
+        </form>
     </main>
 
     <footer>
