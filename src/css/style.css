@@ -5,7 +5,7 @@
     --crm-primary: #1b296a;
     /* Obligatoire */
     --crm-secondary: #ed6840;
-    --crm-ofp: #7db9da;
+    --crm-ofp: #BEDCEC;
     --crm-alert: #cf2d4f;
     --crm-warning: #f6af2e;
     --crm-success: #488287;
@@ -22,18 +22,59 @@ html {
 body {
     font-size: 1.6rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 1000px;
+    margin: 0 auto;
 }
 
-table,
+header {
+    display: flex;
+    height: 200px;
+    justify-content: start;
+    align-content: center;
+    margin-bottom: 3rem;
+}
+
+header a {
+    height: 80%;
+    align-self: center;
+}
+
+header img {
+    height: 100%;
+}
+
+header h1 {
+    align-self: center;
+    flex: 1;
+    text-align: center;
+    color: var(--crm-primary);
+}
+
+caption {
+    font-size: 4rem;
+    font-variant-caps: small-caps;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--crm-primary);
+    margin-bottom: 3rem;
+}
+
+table {
+    background-color: var(--crm-ofp);
+}
+
+th {
+    color: var(--crm-primary);
+    background-color: var(--crm-ofp);
+}
+
 th,
 td {
-    border: 1px solid black;
-}
-
-td {
+    font-size: 85%;
     text-align: center;
+    padding: 1rem;
 }
 
 td span{
     display: block;
+    margin: 0.5rem;
 }
