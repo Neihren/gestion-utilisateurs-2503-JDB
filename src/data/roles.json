@@ -1,0 +1,14 @@
+[
+    {
+        "role_id": 1,
+        "role_name": "Usager"
+    },
+    {
+        "role_id": 5,
+        "role_name": "Encadrant"
+    },
+    {
+        "role_id": 10,
+        "role_name": "Administrateur"
+    }
+]

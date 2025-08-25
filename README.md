@@ -71,3 +71,35 @@ La 1ère étape consiste à créer les différentes vues HTML/CSS nécessaire à
     - **profil.html** : Afficher les détails d'un utilisateur (soyez créatif !)
 
 
+# Partie 2 : Ajouter les fonctionnalités front-end
+
+L'étape suivante consiste à ajouter les fonctionnalités JavaScript aux vues créées à l'étape précédente.
+
+## 1: Ajouter les contrôles nécessaires aux formulaires
+
+- Le nom, prénom contiennent au moins 2 caractères.
+- Le nom et prénom contiennent uniquement des lettres.
+- Le nom et prénom peut contenir 1 espace ou 1 tiret s'il s'agit d'un nom composé.
+- L'adresse email doit être au bon format.
+- Le libellé d'un rôle doit contenir entre 3 et 24 lettres (aucun autre caractère autorisé).
+
+## 2: Charger un utilisateur enregistré dans un fichier JSON
+
+1. Ouvrir la page `profil.html`.
+2. Lier ce fichier HTML à un fichier JS à créer dans `src/data/profil-view.js`.
+3. Charger le fichier `user-1.json` présent dans le répertoire `src/data`.
+4. Afficher les données chargées dans la page `profil.html`.
+
+## 3: Charger les rôles enregistrés dans un fichier JSON
+
+1. Ouvrir la page `roles.html`.
+2. Lier ce fichier HTML à un fichier JS à créer dans `src/data/roles-view.js`.
+3. Charger le fichier `roles.json` présent dans le répertoire `src/data`.
+4. Afficher les données chargées dans la page `roles.html`.
+
+## 4: Charger les utilisateurs enregistrés dans un fichier JSON
+
+1. Ouvrir la page `utilisateurs.html`.
+2. Lier ce fichier HTML à un fichier JS à créer dans `src/data/utilisateurs-view.js`.
+3. Charger le fichier `users.json` présent dans le répertoire `src/data`.
+4. Afficher les données chargées dans la page `roles.html`.
