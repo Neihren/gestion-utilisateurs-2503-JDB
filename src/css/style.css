@@ -50,22 +50,28 @@ header h1 {
     color: var(--crm-primary);
 }
 
-caption {
+caption,
+h2 {
     font-size: 4rem;
     font-variant-caps: small-caps;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--crm-primary);
     margin-bottom: 3rem;
+    text-align: center;
+    font-weight: normal;
 }
 
 table {
+    border-collapse: collapse;
+    border-width: 0;
+    margin: 0 auto;
     background-color: var(--crm-ofp);
 }
 
-th {
+thead {
     color: var(--crm-primary);
-    background-color: var(--crm-ofp);
 }
+
 
 th,
 td {
@@ -74,7 +80,54 @@ td {
     padding: 1rem;
 }
 
+td {
+    background-color: var(--light);
+    border: 1px solid var(--crm-ofp);
+}
+
+
 td span{
     display: block;
     margin: 0.5rem;
+}
+
+footer {
+    
+    height: 80px;
+}
+.userProfil {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.userProfil img {
+    width: 20%;
+}
+
+.userProfil table {
+    width: 50%;
+}
+
+.buttons{
+    text-align: center;
+}
+
+button {
+    background-color: var(--crm-primary);
+    color: var(--light);
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--crm-ofp);
+    color: var(--dark);
+}
+
+fieldset {
+    padding: 15px 10px;
+    margin: 20px 10px;
 }
