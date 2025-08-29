@@ -86,19 +86,21 @@ td {
 }
 
 
-td span{
+td span {
     display: block;
     margin: 0.5rem;
 }
 
 footer {
-    
+
     height: 80px;
 }
+
 .userProfil {
     display: flex;
     flex-flow: row;
     align-items: center;
+    margin-bottom: 10vh;
 }
 
 .userProfil img {
@@ -109,7 +111,7 @@ footer {
     width: 50%;
 }
 
-.buttons{
+.buttons {
     text-align: center;
 }
 
@@ -130,4 +132,69 @@ button:hover {
 fieldset {
     padding: 15px 10px;
     margin: 20px 10px;
+}
+
+#formAddUser input {
+    width: 80%;
+}
+
+#addUserFS {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 5vh);
+    grid-template-areas:
+        "labelSurname labelFirstname"
+        "surname firstname"
+        "labelId labelEmail"
+        "id email"
+        "labelRole labelRole"
+        "role role"
+    ;
+}
+
+#labelSurname {
+    grid-area: labelSurname;
+}
+
+#surname {
+    grid-area: surname;
+
+}
+
+#labelFirstname {
+    grid-area: labelFirstname;
+
+}
+
+#firstname {
+    grid-area: firstname;
+
+}
+
+#labelId {
+    grid-area: labelId;
+
+}
+
+#id {
+    grid-area: id;
+
+}
+
+#labelEmail {
+    grid-area: labelEmail;
+
+}
+
+#email {
+    grid-area: email;
+
+}
+
+#labelRole {
+    grid-area: labelRole;
+}
+
+#role {
+    grid-area: role;
 }
