@@ -134,21 +134,32 @@ fieldset {
     margin: 20px 10px;
 }
 
+#formAddUser label {
+    align-self: end;
+}
+
 #formAddUser input {
+    width: 80%;
+    justify-self: start;
+    align-self: start;
+    
+}
+
+#formAddUser select {
     width: 80%;
 }
 
 #addUserFS {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5, 5vh);
+    grid-template-rows: repeat(5, 3vh);
     grid-template-areas:
         "labelSurname labelFirstname"
         "surname firstname"
         "labelId labelEmail"
         "id email"
         "labelRole labelRole"
-        "role role"
+        "role ."
     ;
 }
 
