@@ -72,7 +72,3 @@
 ```sql
 
 ```
-
-
-## Requêtes SELECT à implémenter (utilisateurs + rôles)
-
