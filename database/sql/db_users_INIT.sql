@@ -9,7 +9,7 @@ Structures de données : DATABASE, TABLE, VIEW, FUNCTION, PROCEDURE, TRIGGER
 
 DROP TABLE IF EXISTS t_user;
 DROP TABLE IF EXISTS t_role;
-TRUNCATE TABLE t_role;
+# TRUNCATE TABLE t_role;
 
 CREATE TABLE IF NOT EXISTS t_role 
 (
@@ -27,12 +27,12 @@ VALUES
 ('encadrant', '1452', 'Les encadrants'),
 ('administrateur', '9874', 'Les super pouvoirs');
 
-
+/*
 INSERT INTO t_role 
 VALUES 
 (NULL, 'usager', '1234', 'Un utilisateur lambda'),
 (NULL, 'encadrant', '1452', 'Les encadrants'),
-(NULL, 'administrateur', '9874', 'Les super pouvoirs');
+(NULL, 'administrateur', '9874', 'Les super pouvoirs');*/
 
 
 
