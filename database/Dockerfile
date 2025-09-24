@@ -6,6 +6,6 @@ ENV MARIADB_ROOT_PASSWORD=azer
 # Nom de la base de données qui sera créée au 1er démarrage du conteneur
 ENV MARIADB_DATABASE=db_users
 # Nom d'utilisateur pour se connecter à la base de données
-ENV MARIADB_USER=mike
+ENV MARIADB_USER=jessy
 # Mot de passe pour se connecter à la base de données
 ENV MARIADB_PASSWORD=1234
