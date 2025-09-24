@@ -9,7 +9,7 @@ Structures de données : DATABASE, TABLE, VIEW, FUNCTION, PROCEDURE, TRIGGER
 
 DROP TABLE IF EXISTS t_user;
 DROP TABLE IF EXISTS t_role;
-TRUNCATE TABLE t_role;
+# TRUNCATE TABLE t_role;
 
 CREATE TABLE IF NOT EXISTS t_role 
 (
@@ -18,22 +18,6 @@ CREATE TABLE IF NOT EXISTS t_role
 	role_register_code CHAR(128) NOT NULL,
 	role_description VARCHAR(255) NULL
 );
-
-
-INSERT INTO t_role 
-(role_name, role_register_code, role_description) 
-VALUES 
-('usager', '1234', 'Un utilisateur lambda'),
-('encadrant', '1452', 'Les encadrants'),
-('administrateur', '9874', 'Les super pouvoirs');
-
-
-INSERT INTO t_role 
-VALUES 
-(NULL, 'usager', '1234', 'Un utilisateur lambda'),
-(NULL, 'encadrant', '1452', 'Les encadrants'),
-(NULL, 'administrateur', '9874', 'Les super pouvoirs');
-
 
 
 CREATE TABLE IF NOT EXISTS t_user 
@@ -46,7 +30,14 @@ CREATE TABLE IF NOT EXISTS t_user
 	role_id INT NOT NULL,
 	PRIMARY KEY (user_id),
 	UNIQUE (user_email)
+	/*	CONSTRAINT FK_user_role FOREIGN KEY (role_id) REFERENCES t_role(role_id) */
 );
+
+
+/* Modifier la table t_user */
+ALTER TABLE t_user ADD CONSTRAINT FK_user_role FOREIGN KEY (role_id) REFERENCES t_role(role_id);
+
+
 
 /*
 LMD : Langage de Modélisation des données 
@@ -56,3 +47,21 @@ UPDATE: Modifier une ou plusieurs lignes existantes
 DELETE: Supprimer une ou plusieurs lignes
 TRUNCATE : Vider une table ET 
 */
+
+
+INSERT INTO t_role 
+(role_name, role_register_code, role_description) 
+VALUES 
+('usager', '1234', 'Un utilisateur lambda'),
+('encadrant', '1452', NULL),
+('administrateur', '9874', 'Les super pouvoirs');
+
+
+INSERT INTO t_user 
+(user_email, user_lastname, user_firstname, user_password, role_id)
+VALUES 
+('toto@example.fr', 			'ingals', 		'charles', 	'azerty', 	3),
+('bertrand@example.com', 	'macron', 		'richard', 	'123456', 	1),
+('germaine@example.fr', 	'lustucru', 	NULL, 		'1234', 		2),
+('daniel@example.com', 		'germain', 		'daniel', 	'azer', 		1),
+('celine@example.com', 		'dion', 			'céline', 	'rené', 		2);
