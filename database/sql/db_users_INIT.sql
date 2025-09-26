@@ -60,8 +60,8 @@ VALUES
 INSERT INTO t_user 
 (user_email, user_lastname, user_firstname, user_password, role_id)
 VALUES 
-('toto@example.fr', 			'ingals', 		'charles', 	'azerty', 	3),
+('toto@example.fr', 		'ingals', 		'charles', 	'azerty', 	3),
 ('bertrand@example.com', 	'macron', 		'richard', 	'123456', 	1),
-('germaine@example.fr', 	'lustucru', 	NULL, 		'1234', 		2),
-('daniel@example.com', 		'germain', 		'daniel', 	'azer', 		1),
-('celine@example.com', 		'dion', 			'céline', 	'rené', 		2);
+('germaine@example.fr', 	'lustucru', 	NULL, 		'1234', 	2),
+('daniel@example.com', 		'germain', 		'daniel', 	'azer', 	1),
+('celine@example.com', 		'dion', 		'céline', 	'rené', 	2);

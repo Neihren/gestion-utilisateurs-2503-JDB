@@ -1,6 +1,28 @@
 # DOCKER IMAGE MariaDB 11
 
-> Dans les instructions de ce document, remplacer `mdevoldere` par votre nom d'utilisateur de votre compte Docker HUB.
+> Dans les instructions de ce document, remplacer `mdevoldere` par le nom d'utilisateur de votre compte Docker HUB.
+
+## Créer le Dockerfile
+
+Dans le répertoire du projet:
+
+1. Dans le dossier du projet, créer un répertoire `database`.
+2. Dans ce répertoire, Créer un fichier `Dockerfile`.
+3. Dans ce fichier, recopier le contenu suivant.
+
+```dockerfile
+# Image de base
+FROM mariadb:11.8.3
+
+# Mot de passe ROOT du serveur de base de données
+ENV MARIADB_ROOT_PASSWORD=azer
+# Nom de la base de données qui sera créée au 1er démarrage du conteneur
+ENV MARIADB_DATABASE=db_users
+# Nom d'utilisateur pour se connecter à la base de données
+ENV MARIADB_USER=mike
+# Mot de passe pour se connecter à la base de données
+ENV MARIADB_PASSWORD=1234
+```
 
 ## Générer l'image 
 
