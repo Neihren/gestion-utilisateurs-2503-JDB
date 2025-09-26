@@ -74,8 +74,33 @@ INSERT INTO
       user_password,
 		role_id)
 VALUES
-	('Danloss', 'Ella', 'ella.danloss@example.com', '12345', '4'),
-	('Golay', 'Jerry', 'j.golay@example.fr', 'azerty', '4'),
-	('Camant', 'Medhi', 'medhi@example.fr', 'password', '5'),
-	('Javelle', 'Aude', 'aj@example.com', '121180', '4'),
-	('Scroute', 'Jessica', 'jescr@example.fr', '231297', '6');
+	('Danloss', 'Ella', 'ella.danloss@example.com', '12345', (	SELECT
+																						role_id
+																					FROM
+																						t_role
+																					WHERE
+																						role_name = 'employé')),
+	('Golay', 'Jerry', 'j.golay@example.fr', 'azerty', (	SELECT
+																				role_id
+																			FROM
+																				t_role
+																			WHERE
+																				role_name = 'employé')),
+	('Camant', 'Medhi', 'medhi@example.fr', 'password', (	SELECT
+																				role_id
+																			FROM
+																				t_role
+																			WHERE
+																				role_name = 'cadre')),
+	('Javelle', 'Aude', 'aj@example.com', '121180', (	SELECT
+																			role_id
+																		FROM
+																			t_role
+																		WHERE
+																			role_name = 'employé')),
+	('Scroute', 'Jessica', 'jescr@example.fr', '231297', (	SELECT
+																					role_id
+																				FROM
+																					t_role
+																				WHERE
+																					role_name = 'dirigeant'));
