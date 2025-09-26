@@ -2,7 +2,7 @@
 
 **Base de données :** 
 - Serveur : `MariaDB 11.8.3`
-- Port : `3310`
+- Port : `4011`
 - Nom de la base de données : `db_users` 
 - Nom de l'image Docker : `gestion-utilisateur-database`
 - Nom du conteneur Docker : `gestion-utilisateur-database` 
@@ -10,11 +10,11 @@
 
 **Créer l'image Docker**
 
-`docker build . -t mdevoldere/gestion-utilisateur-database:1.0`
+`docker build . -t neihren/gestion-utilisateur-database:1.0`
 
 **Créer le container**
 
-`docker run -d -p 3310:3306 -v gestion-utilisateur-data:/var/lib/mysql --name gestion-utilisateur-database mdevoldere/gestion-utilisateur-database:1.0`
+`docker run -d -p 3310:3306 -v gestion-utilisateur-data:/var/lib/mysql --name gestion-utilisateur-database neihren/gestion-utilisateur-database:1.0`
 
 ## Contexte 
 
